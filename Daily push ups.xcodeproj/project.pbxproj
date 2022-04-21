@@ -11,14 +11,18 @@
 		36A9C9A32784B69B00505FDC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A9C9A22784B69B00505FDC /* ContentView.swift */; };
 		36A9C9A52784B69D00505FDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36A9C9A42784B69D00505FDC /* Assets.xcassets */; };
 		36A9C9A82784B69D00505FDC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36A9C9A72784B69D00505FDC /* Preview Assets.xcassets */; };
+		36CB684F278CAE3B00221F62 /* mixkit-sci-fi-click-900.wav in Resources */ = {isa = PBXBuildFile; fileRef = 36CB684E278CAE3B00221F62 /* mixkit-sci-fi-click-900.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		36A9C99D2784B69B00505FDC /* Daily push up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daily push up.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36A9C99D2784B69B00505FDC /* Daily push ups.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daily push ups.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36A9C9A02784B69B00505FDC /* Daily_push_upApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daily_push_upApp.swift; sourceTree = "<group>"; };
 		36A9C9A22784B69B00505FDC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		36A9C9A42784B69D00505FDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36A9C9A72784B69D00505FDC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		36A9C9AE2784F02C00505FDC /* Daily-push-ups-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Daily-push-ups-Info.plist"; sourceTree = "<group>"; };
+		36BE98642811E7900086317A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		36CB684E278CAE3B00221F62 /* mixkit-sci-fi-click-900.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "mixkit-sci-fi-click-900.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,8 @@
 		36A9C9942784B69B00505FDC = {
 			isa = PBXGroup;
 			children = (
+				36BE98642811E7900086317A /* README.md */,
+				36A9C9AE2784F02C00505FDC /* Daily-push-ups-Info.plist */,
 				36A9C99F2784B69B00505FDC /* Daily push up */,
 				36A9C99E2784B69B00505FDC /* Products */,
 			);
@@ -43,7 +49,7 @@
 		36A9C99E2784B69B00505FDC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				36A9C99D2784B69B00505FDC /* Daily push up.app */,
+				36A9C99D2784B69B00505FDC /* Daily push ups.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +60,7 @@
 				36A9C9A02784B69B00505FDC /* Daily_push_upApp.swift */,
 				36A9C9A22784B69B00505FDC /* ContentView.swift */,
 				36A9C9A42784B69D00505FDC /* Assets.xcassets */,
+				36CB684D278CAE2E00221F62 /* Notification Sound */,
 				36A9C9A62784B69D00505FDC /* Preview Content */,
 			);
 			path = "Daily push up";
@@ -67,12 +74,20 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		36CB684D278CAE2E00221F62 /* Notification Sound */ = {
+			isa = PBXGroup;
+			children = (
+				36CB684E278CAE3B00221F62 /* mixkit-sci-fi-click-900.wav */,
+			);
+			path = "Notification Sound";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		36A9C99C2784B69B00505FDC /* Daily push up */ = {
+		36A9C99C2784B69B00505FDC /* Daily push ups */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 36A9C9AB2784B69D00505FDC /* Build configuration list for PBXNativeTarget "Daily push up" */;
+			buildConfigurationList = 36A9C9AB2784B69D00505FDC /* Build configuration list for PBXNativeTarget "Daily push ups" */;
 			buildPhases = (
 				36A9C9992784B69B00505FDC /* Sources */,
 				36A9C99A2784B69B00505FDC /* Frameworks */,
@@ -82,9 +97,9 @@
 			);
 			dependencies = (
 			);
-			name = "Daily push up";
+			name = "Daily push ups";
 			productName = "Daily push up";
-			productReference = 36A9C99D2784B69B00505FDC /* Daily push up.app */;
+			productReference = 36A9C99D2784B69B00505FDC /* Daily push ups.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +117,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 36A9C9982784B69B00505FDC /* Build configuration list for PBXProject "Daily push up" */;
+			buildConfigurationList = 36A9C9982784B69B00505FDC /* Build configuration list for PBXProject "Daily push ups" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +130,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				36A9C99C2784B69B00505FDC /* Daily push up */,
+				36A9C99C2784B69B00505FDC /* Daily push ups */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +142,7 @@
 			files = (
 				36A9C9A82784B69D00505FDC /* Preview Assets.xcassets in Resources */,
 				36A9C9A52784B69D00505FDC /* Assets.xcassets in Resources */,
+				36CB684F278CAE3B00221F62 /* mixkit-sci-fi-click-900.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,21 +288,23 @@
 				DEVELOPMENT_TEAM = 238638W3AM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "Daily-push-ups-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.07;
 				PRODUCT_BUNDLE_IDENTIFIER = "Maxence-Gama.Daily-push-up";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Daily push ups";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -301,28 +319,30 @@
 				DEVELOPMENT_TEAM = 238638W3AM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "Daily-push-ups-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.07;
 				PRODUCT_BUNDLE_IDENTIFIER = "Maxence-Gama.Daily-push-up";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Daily push ups";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		36A9C9982784B69B00505FDC /* Build configuration list for PBXProject "Daily push up" */ = {
+		36A9C9982784B69B00505FDC /* Build configuration list for PBXProject "Daily push ups" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				36A9C9A92784B69D00505FDC /* Debug */,
@@ -331,7 +351,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		36A9C9AB2784B69D00505FDC /* Build configuration list for PBXNativeTarget "Daily push up" */ = {
+		36A9C9AB2784B69D00505FDC /* Build configuration list for PBXNativeTarget "Daily push ups" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				36A9C9AC2784B69D00505FDC /* Debug */,
