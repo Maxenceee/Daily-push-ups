@@ -43,17 +43,20 @@ struct ContentView: View {
     }
     
     func setupAllNofications() {
-        if UserDefaults.standard.object(forKey: "areLocalsNotificationsAlreadyRequested") == nil {
+        UserDefaults.standard.setValue(false, forKey: "areLocalsPushNotificationsAlreadyRequested")
+        let notifSetup = UserDefaults.standard.object(forKey: "areLocalsPushNotificationsAlreadyRequested")
+        print(notifSetup)
+        if notifSetup == nil || (notifSetup != nil) {
             UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
             
-            let content = UNMutableNotificationContent()
-            content.title = "C'est l'heure des pompes !"
-            content.sound = UNNotificationSound(named: UNNotificationSoundName(rawValue: "mixkit-sci-fi-click-900.wav"))
-            
-            var dateComponents = DateComponents()
-            dateComponents.minute = 0
-            
             for i in 0..<3 {
+                let content = UNMutableNotificationContent()
+                content.title = "C'est l'heure des pompes !"
+                content.sound = UNNotificationSound(named: UNNotificationSoundName(rawValue: "mixkit-sci-fi-click-900.wav"))
+                
+                var dateComponents = DateComponents()
+                dateComponents.minute = 0
+                
                 content.body = bodys[i]
                 dateComponents.hour = hours[i]
 
@@ -65,12 +68,12 @@ struct ContentView: View {
                     if let error = error {
                         print("Error: \(error.localizedDescription)")
                     } else {
-                        print("Request accepted", request)
+                        print("Request \(i) accepted", request)
                     }
                 }
             }
             
-            UserDefaults.standard.setValue(true, forKey: "areLocalsNotificationsAlreadyRequested")
+            UserDefaults.standard.setValue(true, forKey: "areLocalsPushNotificationsAlreadyRequested")
         }
     }
     

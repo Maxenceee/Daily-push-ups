@@ -299,7 +299,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.07;
+				MARKETING_VERSION = 1.09;
 				PRODUCT_BUNDLE_IDENTIFIER = "Maxence-Gama.Daily-push-up";
 				PRODUCT_NAME = "Daily push ups";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -330,7 +330,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.07;
+				MARKETING_VERSION = 1.09;
 				PRODUCT_BUNDLE_IDENTIFIER = "Maxence-Gama.Daily-push-up";
 				PRODUCT_NAME = "Daily push ups";
 				SWIFT_EMIT_LOC_STRINGS = YES;
